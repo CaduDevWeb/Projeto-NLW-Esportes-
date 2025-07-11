@@ -117,6 +117,10 @@ button:disabled{
     animation: pulse 1s infinite;
 }
 
+.hidden {
+    display: none;
+}
+
 @keyframes pulse {
     50%{
         opacity: 0.5;
@@ -124,11 +128,23 @@ button:disabled{
 }
 
 #aiResponse {
-    min-height: 50px; /* Ou um valor maior, se preferir */
-    margin-top: 1rem; /* Adicionar um espaço acima para não colar no botão */
+    min-height: 50px; 
+    margin-top: 1rem;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 0.5rem;
+    padding: 1.25rem;
+    border-left: 4px solid #43E7AD;
 }
 
+#aiResponse p{
+    color: white;
+}
+
+#aiResponse ul{
+    padding-left: 1.5rem;
+    opacity: 0.8;
+} 
+
 .response-content {
-    min-height: 30px; /* Para garantir que o texto tenha espaço */
-    /* Pode adicionar padding aqui se quiser mais espaço interno */
+    min-height: 30px;
 }
